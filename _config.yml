@@ -1,18 +1,3 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole site, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing these this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 title: I'm a slow noob
 description: A Jekyll theme for documentation
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -108,11 +93,12 @@ mermaid:
 # Enable or disable heading anchors
 heading_anchors: true
 
-# Ссылка в верхней правой навигации
+# Aux links for the upper right navigation
 aux_links:
-  "О сайте":
-    - "docs/about"
+  "Just the Docs on GitHub":
+    - "https://github.com/just-the-docs/just-the-docs"
 
+# Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false
 
 # Enable or disable the side/mobile menu globally
@@ -123,10 +109,10 @@ nav_enabled: true
 # nav_sort: case_insensitive # default, equivalent to nil
 nav_sort: case_sensitive # Capital letters sorted before lowercase
 
-# Внешняя ссылка в левой панели навигации
-# nav_external_links:
-#   - title: Just the Docs on GitHub
-#     url: https://github.com/just-the-docs/just-the-docs
+# External navigation links
+nav_external_links:
+  - title: Just the Docs on GitHub
+    url: https://github.com/just-the-docs/just-the-docs
 
 # Show navigation error report
 nav_error_report: true # default is false/nil.
@@ -151,7 +137,7 @@ last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https:/
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: true # show or hide edit this page link
 gh_edit_link_text: "Edit this page on GitHub"
-gh_edit_repository: "https://just-the-docs.com/" # the github URL for your repo
+gh_edit_repository: "https://github.com/just-the-docs/just-the-docs" # the github URL for your repo
 gh_edit_branch: "main" # the branch that your docs is served from
 # gh_edit_source: docs # the source that your files originate from
 gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
